@@ -1,5 +1,5 @@
 
-define(function () {
+define(function() {
   var goTop = (function GoTop() {
     function _goTop($ct) {
       this.$ct = $ct

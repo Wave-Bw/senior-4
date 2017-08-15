@@ -93,15 +93,20 @@ h3 {
 
 /* header style start*/
 #header .carousel {
-  width: 1900px;
+  max-width: 1900px;
   height: 1068px;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 #header .carousel .img-ct {
   width: 9500px;
   position: absolute;
+}
+
+#header .carousel img{
+  width: 1918px;
 }
 
 #header .img-ct > li {
@@ -177,6 +182,10 @@ h3 {
 }
 
 /* actor style start*/
+#actor {
+  padding: 0 25px;
+}
+
 
 #actor ol {
   margin-top: 80px;
@@ -236,7 +245,7 @@ h3 {
 }
 
 #poster img {
-  width: 500px;
+  width: 520px;
 }
 
 #poster .btn {
