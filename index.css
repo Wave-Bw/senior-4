@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.fill {
+  width: 100%;
+  height: 10px;
+  background-color: #fed136;
+}
+
+.clear-fix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.center {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  font-size: 80px;
+  margin-top: 30px;
+}
+
+h2 + p{
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+/* nav style start*/
+#nav {
+  width: 100%;
+  height: 90px;
+  padding: 17px;
+  background: rgba(0,0,0, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+#nav .fl {
+  font-size: 40px;
+  font-family: cursive;
+  line-height: 67px;
+  color: #fed136;
+  cursor: pointer;
+}
+
+#nav ul {
+  text-align: center;
+}
+
+#nav li {
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+#nav .fr a {
+  color: #fed136;
+}
+
+#nav li:hover {
+  color: #fff;
+  background-color: red;
+}
+
+
+/* header style start*/
+#header .carousel {
+  width: 1900px;
+  height: 1068px;
+  position: relative;
+  overflow: hidden;
+}
+
+#header .carousel .img-ct {
+  width: 9500px;
+  position: absolute;
+}
+
+#header .img-ct > li {
+  float: left;
+}
+
+#header .carousel .arrow {
+  display: block;
+  width: 80px;
+  height: 80px;
+  line-height: 68px;
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  z-index: 2;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+#header .carousel .btn-pre {
+  left: 100px;
+}
+#header .carousel .btn-next {
+  right: 100px;
+}
+
+#header .arrow:hover {
+  opacity: 1;
+  background-color: #fed136;
+}
+
+#header .bullet > li{
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 8px;
+  margin-right: 30px;
+  background-color: #fed136;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 3;
+}
+
+#header .carousel .bullet {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  z-index: 1;
+  font-size: 0;
+}
+
+#header .bullet > .active {
+  background-color: red;
+  opacity: 0.8;
+}
+  /* summary style start*/
+
+#summary {
+  padding: 150px;
+  background: url("img/background-img/2.jpg") no-repeat center;
+  background-size: cover;
+  font-size: 40px;
+}
+
+#summary h4 {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+/* actor style start*/
+
+#actor ol {
+  margin-top: 80px;
+  position: relative;
+}
+
+#actor  ol::after {
+  content: "";
+  display: block;
+  height: 100%;
+  border-left: 2px solid #f1f1f1;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -1px;
+  z-index: -1;
+}
+
+#actor ol img {
+  border: 10px solid #f1f1f1;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  margin-left: -160px;
+}
+
+#actor ol li {
+  margin-bottom: 70px;
+  position: relative;
+}
+
+#actor ol .detail {
+  width: 30em;
+  text-align: right;
+  position: absolute;
+  top: 0;
+}
+
+#actor li:nth-child(even) .detail {
+  text-align: left;
+  right: 0;
+}
+
+#actor p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* poster style start*/
+#poster {
+  background-color: #f7f7f7;
+  padding: 60px;
+}
+
+#poster .img-ct {
+  margin-top: 50px;
+}
+
+#poster img {
+  width: 500px;
+}
+
+#poster .btn {
+  display: block;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: green;
+  opacity: 0.5;
+  cursor: pointer;
+  margin: 60px auto 0;
+}
+
+#poster .btn:hover {
+  opacity: 1;
+}
+
+/* story style start*/
+#story {
+  background: url("img/background-img/1.jpg") no-repeat center;
+  background-size: cover;
+  padding: 50px;
+}
+
+#story h2,
+#story p {
+  color: #fed136;
+}
+
+#story .fl,
+#story .fr {
+  width: 45%;
+}
+
+#story .fl input {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 90px;
+  font-size: 25px;
+}
+
+#story form {
+  margin-top: 80px;
+}
+
+#story .clear-fix textarea {
+  padding: 20px;
+  width: 100%;
+  font-size: 25px;
+  height: 400px;
+}
+
+#story .center .btn {
+  display: block;
+  margin: 30px auto;
+  background-color: green;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 20px 40px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#story .center .btn:hover {
+  opacity: 1;
+}
+
+.go-top {
+  padding: 15px;
+  background-color: gold;
+  border: 2px solid red;
+  cursor: pointer;
+  position: fixed;
+  right: 75px;
+  bottom: 82px;
+  font-size: 22px;
+  opacity: 0.4;
+  display: none;
+}
+
+.go-top:hover {
+  opacity: 0.8;
+}
